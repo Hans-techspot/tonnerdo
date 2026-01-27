@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amex Cleaners - Professional Dry Cleaning Services</title>
+    <meta name="description" content="Professional dry cleaning services for all your garments. Fast, reliable, and affordable laundry and cleaning solutions.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #e74c3c;
+        }
+
+        .nav {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav a:hover {
+            color: #e74c3c;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #e74c3c;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #e74c3c;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #c0392b;
+        }
+
+        .services {
+            padding: 5rem 0;
+            background-color: white;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #2c3e50;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: #e74c3c;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background-color: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            color: #e74c3c;
+            margin-bottom: 1rem;
+        }
+
+        .about {
+            padding: 5rem 0;
+            background-color: #f8f9fa;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-image {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .pricing {
+            padding: 5rem 0;
+            background-color: white;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .pricing-card {
+            background-color: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .pricing-card h3 {
+            color: #e74c3c;
+            margin-bottom: 1rem;
+        }
+
+        .price {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .contact {
+            padding: 5rem 0;
+            background-color: #2c3e50;
+            color: white;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .footer {
+            background-color: #1a252f;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav {
+                gap: 1rem;
+            }
+
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Amex Cleaners</div>
+                <nav>
+                    <ul class="nav">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Professional Dry Cleaning Services</h1>
+                <p>We provide premium dry cleaning, laundry, and garment care services for all your clothing needs. Fast, reliable, and affordable.</p>
+                <a href="#contact" class="btn">Get a Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>Professional cleaning solutions for all your needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🧺</div>
+                    <h3>Dry Cleaning</h3>
+                    <p>Professional dry cleaning for delicate fabrics, suits, dresses, and more. Our state-of-the-art equipment ensures your garments are cleaned with care.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">👔</div>
+                    <h3>Laundry Services</h3>
+                    <p>Full laundry services for all types of clothing. We handle everything from everyday wear to fine linens with professional care.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🧥</div>
+                    <h3>Garment Repair</h3>
+                    <p>Expert repair and alteration services. We can fix buttons, hems, tears, and more to extend the life of your favorite clothes.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🧼</div>
+                    <h3>Stain Removal</h3>
+                    <p>Specialized stain removal for tough stains. Our trained professionals can remove even the most stubborn stains safely.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">👗</div>
+                    <h3>Wedding Dress Cleaning</h3>
+                    <p>Special care for your wedding dress. We preserve and clean your dress to maintain its beauty for years to come.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚚</div>
+                    <h3>Pickup & Delivery</h3>
+                    <p>Convenient pickup and delivery service. We come to you, clean your clothes, and return them fresh and ready to wear.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Us</h2>
+                <p>Why choose Amex Cleaners for your dry cleaning needs</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Professional dry cleaning services">
+                </div>
+                <div class="about-text">
+                    <p>Founded with a commitment to excellence, Amex Cleaners has been serving the community for over 10 years. Our team of skilled professionals uses the latest technology and eco-friendly cleaning methods to ensure your garments receive the best care possible.</p>
+                    <p>We understand that your clothes are important investments, and we treat them with the respect they deserve. From delicate silks to sturdy denims, we have the expertise to handle all types of fabrics.</p>
+                    <p>Customer satisfaction is our top priority. We strive to provide not just clean clothes, but an exceptional experience from pickup to delivery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-title">
+                <h2>Pricing</h2>
+                <p>Affordable rates for professional cleaning services</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Shirts</h3>
+                    <div class="price">$2.50</div>
+                    <p>Dry cleaning per shirt</p>
+                </div>
+                <div class="pricing-card">
+                    <h3>Pants</h3>
+                    <div class="price">$3.50</div>
+                    <p>Dry cleaning per pair</p>
+                </div>
+                <div class="pricing-card">
+                    <h3>Suits</h3>
+                    <div class="price">$12.00</div>
+                    <p>Dry cleaning per suit</p>
+                </div>
+                <div class="pricing-card">
+                    <h3>Dresses</h3>
+                    <div class="price">$8.00</div>
+                    <p>Dry cleaning per dress</p>
+                </div>
+                <div class="pricing-card">
+                    <h3>Jackets</h3>
+                    <div class="price">$6.00</div>
+                    <p>Dry cleaning per jacket</p>
+                </div>
+                <div class="pricing-card">
+                    <h3>Coats</h3>
+                    <div class="price">$10.00</div>
+                    <p>Dry cleaning per coat</p>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 2rem;">*Prices may vary based on fabric type and cleaning requirements. Contact us for a custom quote.</p>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Get in touch with us for all your dry cleaning needs</p>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+            <div style="margin-top: 3rem; text-align: center;">
+                <h3>Visit Us</h3>
+                <p>123 Main Street, City, State 12345</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Email: info@amexcleaners.com</p>
+                <div class="social-links">
+                    <a href="#facebook">📘</a>
+                    <a href="#twitter">🐦</a>
+                    <a href="#instagram">📷</a>
+                    <a href="#google">📌</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Amex Cleaners. All rights reserved.</p>
+            <p>Professional dry cleaning services you can trust.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Contact form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
