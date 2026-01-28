@@ -1,0 +1,38 @@
+# Node.js
+node_modules/
+pnpm-lock.yaml
+package.json
+package-lock.json
+yarn.lock
+
+# System files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Logs and temporary files
+*.log
+*.tmp
+*.cache
+
+# Build output
+/dist/
+/build/
+/out/
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Claude Code files
+claude-stream.mjs
+stream-server.mjs
+
+# Image placeholder files
+*.jpg.txt
+*.png.txt
