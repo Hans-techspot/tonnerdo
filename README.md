@@ -1,6 +1,6 @@
-# Tonnerdo - Professional Dry Cleaning Website
+# Royal Dry Cleaners - Professional Dry Cleaning Website
 
-A modern, responsive website for Tonnerdo, a premium dry cleaning and laundry service business offering professional cleaning, alterations, and convenient pickup/delivery services.
+A modern, responsive website for Royal Dry Cleaners, a premium dry cleaning and laundry service business offering professional cleaning, alterations, and convenient pickup/delivery services.
 
 ## Features
 
@@ -29,9 +29,9 @@ A modern, responsive website for Tonnerdo, a premium dry cleaning and laundry se
 ├── styles.css          # Main stylesheet with CSS variables
 ├── script.js           # JavaScript for interactivity and animations
 ├── .gitignore          # Git ignore file for system files
-├── logo.png            # Company logo (placeholder)
-├── hero.jpg            # Hero background image (placeholder)
-├── about.jpg           # About section image (placeholder)
+├── logo.png.txt        # Placeholder for company logo
+├── hero.jpg.txt        # Placeholder for hero background image
+├── about.jpg.txt       # Placeholder for about section image
 └── README.md           # Project documentation
 ```
 
