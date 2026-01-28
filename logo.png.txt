@@ -1,0 +1,3 @@
+Placeholder for logo.png
+This is a text file since ImageMagick is not available.
+Replace with your actual logo image (200x200 pixels recommended).
