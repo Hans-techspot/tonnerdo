@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amex Cleaners - Professional Dry Cleaning Services</title>
+    <meta name="description" content="Professional dry cleaning and laundry services with pickup and delivery">
+    <title>Tonnerdo - Premium Dry Cleaning Services</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -11,17 +12,21 @@
     <header>
         <div class="container">
             <div class="logo">
-                <img src="logo.png" alt="Amex Cleaners Logo" id="logo-img">
-                <h1>Amex Cleaners</h1>
+                <img src="logo.png" alt="Tonnerdo Logo" id="logo-img">
+                <h1>Tonnerdo</h1>
             </div>
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#about">About Us</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </header>
 
@@ -29,8 +34,9 @@
         <div class="container">
             <div class="hero-content">
                 <h2>Premium Dry Cleaning Services</h2>
-                <p>Expert care for your finest garments</p>
+                <p>Expert care for your finest garments with free pickup and delivery</p>
                 <a href="#contact" class="btn">Get a Quote</a>
+                <a href="tel:+16477645658" class="btn secondary">Call Now</a>
             </div>
         </div>
     </section>
@@ -42,22 +48,60 @@
                 <div class="service-card">
                     <i class="fas fa-tshirt"></i>
                     <h3>Dry Cleaning</h3>
-                    <p>Professional dry cleaning for all fabrics and garments</p>
+                    <p>Professional dry cleaning for all fabrics and garments using eco-friendly solvents</p>
                 </div>
                 <div class="service-card">
                     <i class="fas fa-shoe-prints"></i>
                     <h3>Laundry Services</h3>
-                    <p>Premium laundry and pressing services</p>
+                    <p>Premium laundry and pressing services for all your clothing needs</p>
                 </div>
                 <div class="service-card">
                     <i class="fas fa-suitcase"></i>
                     <h3>Alterations</h3>
-                    <p>Professional tailoring and alterations</p>
+                    <p>Professional tailoring and alterations by experienced seamstresses</p>
                 </div>
                 <div class="service-card">
                     <i class="fas fa-car"></i>
                     <h3>Pickup & Delivery</h3>
-                    <p>Convenient pickup and delivery service</p>
+                    <p>Convenient same-day pickup and delivery service across the city</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Eco-Friendly Cleaning</h3>
+                    <p>Environmentally safe cleaning solutions that protect your clothes and the planet</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-star"></i>
+                    <h3>Special Occasion</h3>
+                    <p>Expert care for wedding dresses, formal wear, and special event attire</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Why Choose Tonnerdo?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Quality Guarantee</h3>
+                    <p>We stand behind our work with a 100% satisfaction guarantee</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Fast Turnaround</h3>
+                    <p>Same-day and next-day service options available</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-truck"></i>
+                    <h3>Free Delivery</h3>
+                    <p>Complimentary pickup and delivery within our service area</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>24/7 Support</h3>
+                    <p>Dedicated customer service available whenever you need us</p>
                 </div>
             </div>
         </div>
@@ -67,14 +111,54 @@
         <div class="container">
             <div class="about-content">
                 <div class="about-text">
-                    <h2>About Amex Cleaners</h2>
-                    <p>Founded in 2010, Amex Cleaners has been providing exceptional dry cleaning services to the community. Our team of experienced professionals uses state-of-the-art equipment and eco-friendly cleaning solutions to ensure your garments receive the best care possible.</p>
+                    <h2>About Tonnerdo</h2>
+                    <p>Founded in 2010, Tonnerdo has been providing exceptional dry cleaning services to the community. Our team of experienced professionals uses state-of-the-art equipment and eco-friendly cleaning solutions to ensure your garments receive the best care possible.</p>
                     <p>We pride ourselves on our attention to detail, excellent customer service, and commitment to quality. Whether it's a special occasion dress, a business suit, or everyday clothing, we treat every item with the care it deserves.</p>
+                    <p>Our mission is to deliver superior cleaning services with integrity, professionalism, and a personal touch. We believe that clean clothes should be easy to achieve, which is why we offer convenient pickup and delivery options.</p>
                 </div>
                 <div class="about-image">
-                    <img src="about.jpg" alt="Amex Cleaners Team">
+                    <img src="about.jpg" alt="Tonnerdo Team">
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2>Pricing</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Shirts & Blouses</h3>
+                    <p class="price">$5.99 - $8.99</p>
+                    <p>Dry cleaning or laundry service</p>
+                </div>
+                <div class="pricing-card">
+                    <h3>Pants & Slacks</h3>
+                    <p class="price">$7.99 - $12.99</p>
+                    <p>Dry cleaning or laundry service</p>
+                </div>
+                <div class="pricing-card">
+                    <h3>Suits & Jackets</h3>
+                    <p class="price">$15.99 - $25.99</p>
+                    <p>Complete suit cleaning and pressing</p>
+                </div>
+                <div class="pricing-card">
+                    <h3>Dresses & Gowns</h3>
+                    <p class="price">$12.99 - $35.99</p>
+                    <p>Based on fabric and complexity</p>
+                </div>
+                <div class="pricing-card">
+                    <h3>Coats & Outerwear</h3>
+                    <p class="price">$18.99 - $45.99</p>
+                    <p>Specialized cleaning for delicate fabrics</p>
+                </div>
+                <div class="pricing-card">
+                    <h3>Special Occasion</h3>
+                    <p class="price">$50.00 - $200.00</p>
+                    <p>Wedding dresses and formal wear</p>
+                </div>
+            </div>
+            <p class="pricing-note">*Prices may vary based on fabric type, staining, and special care requirements</p>
         </div>
     </section>
 
@@ -84,9 +168,9 @@
             <div class="contact-content">
                 <div class="contact-info">
                     <h3>Visit Us</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> 123 Main Street, Cityville, CA 90210</p>
-                    <p><i class="fas fa-phone"></i> (555) 123-4567</p>
-                    <p><i class="fas fa-envelope"></i> info@amexcleaners.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 98 Lanyard Rd, North York, ON</p>
+                    <p><i class="fas fa-phone"></i> +1-647-764-5658</p>
+                    <p><i class="fas fa-envelope"></i> info@tonnerdo.com</p>
                     <div class="hours">
                         <h4>Hours</h4>
                         <p>Monday - Friday: 8:00 AM - 7:00 PM</p>
@@ -95,7 +179,7 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form>
+                    <form id="contact-form">
                         <input type="text" placeholder="Your Name" required>
                         <input type="email" placeholder="Your Email" required>
                         <input type="tel" placeholder="Your Phone">
@@ -116,16 +200,17 @@
                         <li><a href="#home">Home</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#about">About Us</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h3>Follow Us</h3>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-yelp"></i></a>
+                        <a href="https://facebook.com/tonnerdo" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/tonnerdo" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/tonnerdo" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://yelp.com/tonnerdo" target="_blank"><i class="fab fa-yelp"></i></a>
                     </div>
                 </div>
                 <div class="footer-section">
@@ -138,7 +223,7 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2024 Amex Cleaners. All Rights Reserved.</p>
+                <p>&copy; 2024 Tonnerdo. All Rights Reserved.</p>
             </div>
         </div>
     </footer>

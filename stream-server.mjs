@@ -10,7 +10,7 @@ app.use(express.json({ limit: '50mb' }));
 
 const HISTORY_FILE = '/home/user/.claude_history.json';
 const WORK_DIR = '/home/user/tonnerdo';
-const WORKING_BRANCH = 'main';
+const WORKING_BRANCH = 'pipilot/visit-and-extract-key-54ce';
 
 // Health check endpoint
 app.get('/health', (req, res) => {

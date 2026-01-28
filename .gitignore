@@ -1,11 +1,11 @@
-# Node.js
+# Node.js dependencies
 node_modules/
 pnpm-lock.yaml
 package.json
 package-lock.json
 yarn.lock
 
-# System files
+# System files and IDE settings
 .idea/
 .vscode/
 *.swp
@@ -17,12 +17,12 @@ yarn.lock
 *.tmp
 *.cache
 
-# Build output
+# Build output directories
 /dist/
 /build/
 /out/
 
-# Environment files
+# Environment and configuration files
 .env
 .env.local
 .env.development
@@ -36,3 +36,91 @@ stream-server.mjs
 # Image placeholder files
 *.jpg.txt
 *.png.txt
+*.gif.txt
+*.svg.txt
+
+# Editor and OS files
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Test coverage files
+/coverage/
+
+# Debugging files
+*.debug
+
+# IDE cache files
+.*.swp
+*.sublime-workspace
+*.sublime-project
+
+# macOS files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:enc
+
+# Finder cache files
+._*
+.Spotlight-V100
+.Trashes
+.TemporaryItems
+.TCSH
+
+# Git files
+.git/
+.gitignore
+.gitmodules
+.gitattributes
+
+# OS generated files
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+System Volume Information/
+
+# Development tools
+.husky/
+.lint/
+
+# Yarn cache
+.yarn-cache/
+
+# Webpack cache
+webpack-cache/
+
+# Browser cache
+.browser-cache/
+
+# IDE specific files
+.vscode/
+.idea/
+*.code-workspace
+
+# Test files
+/__tests__/
+*.test.js
+*.spec.js
+
+# Documentation files
+*.md
+
+# Database files
+*.db
+*.sqlite
+*.sqlite-journal
+
+# Cache files
+.cache/
+.tmp/
+
+# Build artifacts
+*.min.js
+*.min.css
